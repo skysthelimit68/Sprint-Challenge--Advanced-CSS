@@ -454,6 +454,9 @@ select {
 .close-wrap .close:hover {
   color: #22283A;
 }
+.aboutus .intro {
+  padding-bottom: 20px;
+}
 .aboutus .intro h2 {
   padding: 15px;
 }
@@ -463,43 +466,57 @@ select {
 .aboutus .intro .intro-image-wrap {
   margin: 0 auto;
   max-width: 800px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow: hidden;
 }
 .aboutus .intro img {
-  border-radius: 5px;
   width: 100%;
+  border-radius: 5px;
 }
-.aboutus .space-images {
+.aboutus .space-box {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-around;
 }
-.aboutus .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
-}
-@media (max-width:500px) {
-  .aboutus .space-images img {
-    width: 100%;
-  }
-  .aboutus .space-images img:nth-child(2) {
-    display: none;
-  }
-  .aboutus .space-images img:nth-child(3) {
-    display: none;
-  }
-}
-.aboutus .visit-planets {
+.aboutus .space-box h3 {
   padding: 15px;
 }
-.aboutus .visit-planets h3 {
+.aboutus .space-box p {
+  padding: 5px 15px;
+}
+.aboutus .space-box .about-us-box {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width:800px) {
+  .aboutus .space-box .about-us-box {
+    width: 100%;
+    padding: 20px 15px;
+  }
+}
+.aboutus .space-box .about-us-box .about-us-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.aboutus .space-box .about-us-box .about-us-img-wrap img {
+  width: 100%;
+  border-radius: 5px;
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
   margin-top: 11px;
 }
-.aboutus .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.aboutus .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -507,32 +524,32 @@ select {
   justify-content: center;
 }
 @media (max-width:500px) {
-  .aboutus .walk {
+  .walk {
     padding: 20px 15px;
     flex-direction: column-reverse;
     margin-top: 20px;
   }
 }
-.aboutus .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
 @media (max-width:500px) {
-  .aboutus .walk .walk-text {
+  .walk .walk-text {
     width: 100%;
     margin-top: 20px;
   }
 }
-.aboutus .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.aboutus .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.aboutus .walk .walk-text a {
+.walk .walk-text a {
   text-decoration: none;
   color: white;
 }
-.aboutus .walk .walk-text .btn {
+.walk .walk-text .btn {
   font-size: 1.8rem;
   padding: 8px;
   border-radius: 5px;
@@ -542,7 +559,7 @@ select {
   color: #F1F1F1;
   max-width: 30%;
 }
-.aboutus .walk .walk-text .btn:hover {
+.walk .walk-text .btn:hover {
   font-size: 1.8rem;
   padding: 8px;
   border-radius: 5px;
@@ -552,27 +569,27 @@ select {
   color: #22283A;
 }
 @media (max-width:500px) {
-  .aboutus .walk .walk-text .btn:hover {
+  .walk .walk-text .btn:hover {
     padding: 25px;
   }
 }
 @media (max-width:500px) {
-  .aboutus .walk .walk-text .btn {
+  .walk .walk-text .btn {
     max-width: 100%;
     padding: 25px;
   }
 }
-.aboutus .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width:500px) {
-  .aboutus .walk .walk-img {
+  .walk .walk-img {
     width: 100%;
     margin-left: 0;
   }
 }
-.aboutus .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
