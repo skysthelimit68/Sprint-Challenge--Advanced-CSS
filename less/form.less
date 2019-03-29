@@ -25,15 +25,14 @@ form {
         margin-top:20px;
     }
     button {
-        .btnStyle(@btn-bg-color, white);
+        .btnStyle(@btn-bg-color, @sea-shell);
         margin:40px auto 10px;
-        max-width:80%;
+        width:100%;
         a {
-            .anchorStyle(none, white);
+            .anchorStyle(none, @sea-shell);
         }
         &:hover {
             .btnHoverTransition(@btn-bg-color, 500ms);
-            padding:11px 13px;
             background-color: darken(@btn-bg-color, 10%);
         }
 

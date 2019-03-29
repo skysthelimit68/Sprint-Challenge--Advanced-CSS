@@ -171,6 +171,7 @@ p {
   border-bottom: 2px solid #F1F1F1;
   background-color: #F6F6F6;
   height: 100px;
+  opacity: 0.98;
 }
 .main-header .main-header-wrap {
   display: flex;
@@ -281,6 +282,10 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text a {
+  text-decoration: none;
+  color: white;
+}
 .home .walk .walk-text .btn {
   font-size: 1.8rem;
   padding: 8px;
@@ -291,10 +296,6 @@ footer {
   color: #F1F1F1;
   max-width: 30%;
 }
-.home .walk .walk-text .btn a {
-  text-decoration: none;
-  color: white;
-}
 .home .walk .walk-text .btn:hover {
   font-size: 1.8rem;
   padding: 8px;
@@ -302,10 +303,6 @@ footer {
   text-align: center;
   border: 1px solid #5E6164;
   background-color: #F1F1F1;
-  color: #22283A;
-}
-.home .walk .walk-text .btn:hover a {
-  text-decoration: none;
   color: #22283A;
 }
 @media (max-width:500px) {
@@ -368,18 +365,17 @@ form {
   text-align: center;
   border: 1px solid #5E6164;
   background-color: #22283A;
-  color: white;
+  color: #F1F1F1;
   margin: 40px auto 10px;
-  max-width: 80%;
+  width: 100%;
 }
 .form-wrap button a {
   text-decoration: none;
-  color: white;
+  color: #F1F1F1;
 }
 .form-wrap button:hover {
   background-color: #22283A;
   transition: all 500ms;
-  padding: 11px 13px;
   background-color: #0f121a;
 }
 input,
@@ -422,7 +418,7 @@ select {
   }
 }
 .close-wrap {
-  background-color: #ecc600;
+  background-color: #5c5329;
   border-radius: 50%;
   position: absolute;
   top: -15px;
@@ -430,7 +426,7 @@ select {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #F1F1F1;
   width: 35px;
   height: 35px;
   display: flex;
@@ -449,7 +445,7 @@ select {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #F1F1F1;
 }
 .close-wrap .close:hover {
   color: #22283A;

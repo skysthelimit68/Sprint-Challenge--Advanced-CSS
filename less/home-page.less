@@ -82,18 +82,17 @@
       p {
         margin-bottom: 26px;
       }
+     a {
+          .anchorStyle(none, white);
 
+      }
       .btn {
         .btnStyle(@btn-bg-color,@sea-shell);
         max-width: 30%;
-        a {
-          .anchorStyle(none, white);
-        }
+        
         &:hover {
           .btnStyle(@sea-shell,@btn-bg-color);
-          a {
-            .anchorStyle(none, @btn-bg-color);
-          }
+          
           @media @phone {
             padding:25px;
           }
