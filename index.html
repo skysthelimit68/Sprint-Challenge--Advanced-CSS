@@ -68,7 +68,7 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <a  href="#signup">Sign Up</a>
         </div>
       </div>
       
@@ -78,9 +78,47 @@
 
     </section>
 
+    <div id="signup" class="overlay">
+      <div class="popup-wrap">
+        <h2>Subscribe to Spacewalkers Magazine</h2>
+        <div class="close-wrap">
+          <a class="close" href="#">&times;</a>
+        </div> 
+        <div class="form-wrap">
+          <form id="sign-up-form" action="#" method="post" >
+              <div class="form-half-field">
+                  <label for="firstName">First Name</label>
+                  <input id="firstName" name="firstName" type="text">
+              </div>
+              <div class="form-half-field">
+                  <label for="lastName">Last Name</label>
+                  <input id="lastName" name="lastName" type="text">
+              </div>
+              <div class="form-full-field">
+                  <label for="address">Mailing Address</label>
+                  <input id="address" name="address" type="text">
+              </div>
+              <div class="form-full-field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="text">
+              </div>
+              
+              <div class="form-full-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" maxlength="1024"></textarea>
+              </div>
+            <button type="submit">Submit</button> 
+          </form>
+        </div>
+      </div>
+    </div>
+
+
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
+
+
 
   </div>
 </body>
