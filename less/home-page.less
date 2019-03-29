@@ -70,7 +70,7 @@
 
     .walk-text {
       width: 50%;
-      @media @phone {
+      @media @tablet {
         width:100%;
         margin-top:20px;
       }
@@ -93,11 +93,11 @@
         &:hover {
           .btnStyle(@sea-shell,@btn-bg-color);
           
-          @media @phone {
+          @media @tablet {
             padding:25px;
           }
         }
-        @media @phone {
+        @media @tablet {
           max-width:100%;
           padding:25px;
         }
@@ -107,9 +107,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @phone {
+      @media @tablet {
         width:100%;
-        margin-left:0;
+          margin-left:0;
+          max-height:300px;
+          border-radius:5px;
+          overflow:hidden;
       }
       
       img {
