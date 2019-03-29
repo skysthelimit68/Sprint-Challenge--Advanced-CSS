@@ -606,6 +606,30 @@ select {
 .main-header span:nth-child(3n+1):hover {
   font-size: 2rem;
 }
+.main-header span:nth-child(1) {
+  width: 2.66rem;
+}
+.main-header span:nth-child(1):hover {
+  text-align: right;
+}
+.main-header span:nth-child(4) {
+  width: 2.2rem;
+}
+.main-header span:nth-child(4):hover {
+  text-align: center;
+}
+.main-header span:nth-child(7) {
+  width: 2.38rem;
+}
+.main-header span:nth-child(7):hover {
+  text-align: center;
+}
+.main-header span:nth-child(10) {
+  width: 2.4rem;
+}
+.main-header span:nth-child(10):hover {
+  text-align: center;
+}
 .main-header span:nth-child(even):hover {
   color: red;
   transition: all 400ms;
