@@ -560,7 +560,7 @@ select {
   border: 1px solid #5E6164;
   background-color: #22283A;
   color: #F1F1F1;
-  max-width: 30%;
+  width: 100%;
 }
 .walk .walk-text .btn:hover {
   font-size: 1.8rem;
