@@ -600,3 +600,19 @@ select {
   height: auto;
   border-radius: 10px;
 }
+.main-header span {
+  display: inline-block;
+}
+.main-header span:nth-child(3n+1):hover {
+  font-size: 2rem;
+}
+.main-header span:nth-child(even):hover {
+  color: red;
+  transition: all 400ms;
+  transform: rotate(-20deg);
+}
+.main-header span:nth-child(odd):hover {
+  color: green;
+  transition: all 400ms;
+  transform: rotate(20deg);
+}

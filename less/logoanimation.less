@@ -1,9 +1,25 @@
 .main-header {
     span {
+        display:inline-block;
+        &:nth-child(3n+1) {
+            &:hover {
+                font-size: 2rem;
+            }
+        }  
         &:nth-child(even) {
-
+            &:hover {
+                color:red;
+                transition:all 400ms;
+               transform:rotate(-20deg);
+            }
         }
         &:nth-child(odd) {
+            &:hover{
+                color:green;
+                transition:all 400ms;
+                transform:rotate(20deg);
+            }
+         
 
         }
     }
