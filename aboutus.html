@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>SpaceWalkers</title>
+  <title>SpaceWalkers - About Us</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -21,13 +21,13 @@
  <!-- navigation code here -->
 <header class="main-header">
   <div class="main-header-wrap">
-    <h1><a href="index.html">
-      <span>S</span><span>p</span><span>a</span><span>c</span><span>e</span><span>W</span><span>a</span><span>l</span><span>k</span><span>e</span><span>r</span><span>s</span>
-    </a>
-    </h1>
-     <nav>
-    <a href="#">Home</a>
-    <a href="aboutus.html">About Us</a>
+        <h1><a href="index.html">
+                <span>S</span><span>p</span><span>a</span><span>c</span><span>e</span><span>W</span><span>a</span><span>l</span><span>k</span><span>e</span><span>r</span><span>s</span>
+              </a>
+              </h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
     <a href="#">Blog</a>
     <a href="#">Contact</a>
     <a href="#">Sign In</a>
@@ -35,32 +35,37 @@
 </div>
 </header>
 
-  <div class="container home">
+  <div class="container aboutus">
 
     <header class="intro">
        <!-- image code here -->
       <div class="intro-image-wrap">
-        <img src="img/main-header.png" alt="space">
+        <img src="https://images.pexels.com/photos/1434608/pexels-photo-1434608.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="space">
       </div>
-      <h2>Lift Off</h2>
+      <h2>About Us</h2>
     
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      <p>Lorem ipsum dolor sit amet, quis omittam eu mei, ea vocibus philosophia pro, et veri putant adipisci has. An sit noster accusam. Et qualisque maluisset usu. Ferri graeci pri id, sea enim meis id. Numquam inimicus maiestatis no vis.
+        </p>
     </header>
 
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+    <section class="space-box">
+        <div class="about-us-box">
+            <div class="about-us-img-wrap">
+                <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+            </div>
+            <h3>Dreaming about Visiting Planets</h3>
+            <p>Lorem ipsum dolor sit amet, quis omittam eu mei, ea vocibus philosophia pro, et veri putant adipisci has. An sit noster accusam. Et qualisque maluisset usu. Ferri graeci pri id, sea enim meis id. Numquam inimicus maiestatis no vis.</p>
+        </div>
+        <div class="about-us-box">
+            <div class="about-us-img-wrap">
+                <img src="img/sky.png" class="sky" alt="Space sky image">
+            </div>
+            <h3>Dreaming about Visiting Planets</h3>
+            <p>Lorem ipsum dolor sit amet, quis omittam eu mei, ea vocibus philosophia pro, et veri putant adipisci has. An sit noster accusam. Et qualisque maluisset usu. Ferri graeci pri id, sea enim meis id. Numquam inimicus maiestatis no vis.</p>
+        </div>
+       
     </section>
    
-    <section class="visit-planets">
-     
-      <h3>Can We Visit Planets?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
-    </section>
     
     <section class="walk">
       <div class="walk-text">
@@ -70,9 +75,9 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <a  href="#signup"><div class="btn">
-          Sign Up
-        </div></a>
+        <a  href="#chatwithus">
+            <div class="btn">Come Chat With Us!</div>
+        </a>
       </div>
       
       <div class="walk-img">
@@ -81,9 +86,9 @@
 
     </section>
 
-    <div id="signup" class="overlay">
+    <div id="chatwithus" class="overlay">
       <div class="popup-wrap">
-        <h2>Subscribe to Spacewalkers Magazine</h2>
+        <h2>We love to chat with you on all topics space related!</h2>
         <div class="close-wrap">
           <a class="close" href="#">&times;</a>
         </div> 
@@ -97,15 +102,19 @@
                   <label for="lastName">Last Name</label>
                   <input id="lastName" name="lastName" type="text">
               </div>
-              <div class="form-full-field">
-                  <label for="address">Mailing Address</label>
-                  <input id="address" name="address" type="text">
-              </div>
+              
               <div class="form-full-field">
                   <label for="email">Email Address</label>
                   <input id="email" name="email" type="text">
               </div>
               
+              <div class="form-full-field">
+                    <label for="topic">What's your most favorite space topic?</label>
+                    <select id="selecting-topic" name="selecting-topic" >
+                      <option>Space exploration</option>
+                      <option>Space Traveling</option>
+                      <option>Extraterrestrial Intelligence</option>
+                    </select> 
               <div class="form-full-field">
                   <label for="message">Message</label>
                   <textarea id="message" name="message" maxlength="1024"></textarea>
@@ -116,13 +125,8 @@
       </div>
     </div>
 
-
-    <footer>
+  </div><footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
-
-
-
-  </div>
 </body>
 </html>

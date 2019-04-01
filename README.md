@@ -34,15 +34,34 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive website has layouts that accommodate most common devices w/ predefined break points (non flexible), while 	responsive website fully utilize media queries that provides a better user experience across most, if not all, devices 	and screen sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first web is designed for the smallest screen size  (mostly mobile phones) first and work your way up (phone -	> tablet -> desktop).  Main style based on smallest screen size, then min-width media queries are added to accommodate 	larger screen sizes.  A desktop first design is just the total opposite. A desktop first approach designs for desktop 	first, then adding max-width media queries to accommodate smaller screen sizes.  
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Making font size conversion easier. By making the base unit to 10px, instead of the default font size of 16px, it’s much more convenient to convert from the base font size to any desired font size you want. 
+
+
 4. How would you describe preprocessing to someone new to CSS?
+
+Allowing for better component style managements/maintenance, improving style reusability and decrease the amount of css code you have to write for a project.   
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+Most favorites? There are more than one! 	
+1) Component styling management via multiple preprocessing (LESS) files
+2) predefined functions making simple hover effect easier (eg. simply using darken or lighten function to create a simple effect)
+3) nesting makes media query easier to create/manage/search.
+4) reusable components using variable and mixins
+
+Concept that gives me the most trouble? I will have to say parametric mixins, not in a sense of actually creating or using them, but as more parametric mixins are created, I can see it will get a bit difficult to remember all the arguments that goes into every single parametric mixins.  The constant going back to mixins file and looking up arguments might end up wasting more time.  Sill early stage using preprocessor, so only time will tell. 
+
+
 
 ## Project Set Up
 

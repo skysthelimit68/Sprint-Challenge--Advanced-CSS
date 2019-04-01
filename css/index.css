@@ -1,0 +1,642 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #5E6164;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.main-header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #F1F1F1;
+  background-color: #F6F6F6;
+  height: 100px;
+  opacity: 0.98;
+}
+.main-header .main-header-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 13px;
+}
+.main-header .main-header-wrap h1 a {
+  text-decoration: none;
+  color: #23293B;
+}
+.main-header .main-header-wrap nav {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  max-width: 380px;
+  margin-top: 20px;
+}
+@media (max-width:500px) {
+  .main-header .main-header-wrap nav {
+    width: 80%;
+    max-width: 500px;
+  }
+}
+.main-header .main-header-wrap nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro .intro-image-wrap {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .home .walk {
+    padding: 20px 15px;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width:800px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text a {
+  text-decoration: none;
+  color: white;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5E6164;
+  background-color: #22283A;
+  color: #F1F1F1;
+  max-width: 30%;
+}
+.home .walk .walk-text .btn:hover {
+  font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5E6164;
+  background-color: #F1F1F1;
+  color: #22283A;
+}
+@media (max-width:800px) {
+  .home .walk .walk-text .btn:hover {
+    padding: 25px;
+  }
+}
+@media (max-width:800px) {
+  .home .walk .walk-text .btn {
+    max-width: 100%;
+    padding: 25px;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:800px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    max-height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.form-wrap {
+  padding: 0 3%;
+}
+.form-wrap .form-half-field {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media (max-width:500px) {
+  .form-wrap .form-half-field {
+    width: 100%;
+  }
+}
+.form-wrap .form-full-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-wrap button {
+  font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5E6164;
+  background-color: #22283A;
+  color: #F1F1F1;
+  margin: 40px auto 10px;
+  width: 100%;
+}
+.form-wrap button a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.form-wrap button:hover {
+  background-color: #22283A;
+  transition: all 500ms;
+  background-color: #0f121a;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  height: 50px;
+  font-size: 1em;
+  font-family: monospace, serif;
+  color: #555;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-wrap {
+  margin: 100px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+  max-width: 450px;
+}
+@media (max-width:500px) {
+  .popup-wrap {
+    max-width: 90%;
+  }
+}
+.close-wrap {
+  background-color: #5c5329;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F1F1F1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-wrap:hover {
+  background-color: #F6F6F6;
+  transition: all 500ms;
+  color: #22283A;
+  border: 3px solid #22283A;
+  font-size: 27px;
+}
+.close-wrap .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.close-wrap .close:hover {
+  color: #22283A;
+}
+.aboutus .intro {
+  padding-bottom: 20px;
+}
+.aboutus .intro h2 {
+  padding: 15px;
+}
+.aboutus .intro p {
+  padding: 0 15px;
+}
+.aboutus .intro .intro-image-wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.aboutus .intro img {
+  width: 100%;
+  border-radius: 5px;
+}
+.aboutus .space-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.aboutus .space-box h3 {
+  padding: 15px;
+}
+.aboutus .space-box p {
+  padding: 5px 15px;
+}
+.aboutus .space-box .about-us-box {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width:800px) {
+  .aboutus .space-box .about-us-box {
+    width: 100%;
+    padding: 20px 15px;
+  }
+}
+.aboutus .space-box .about-us-box .about-us-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.aboutus .space-box .about-us-box .about-us-img-wrap img {
+  width: 100%;
+  border-radius: 5px;
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:800px) {
+  .walk {
+    padding: 20px 15px;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+}
+.walk .walk-text {
+  width: 50%;
+}
+@media (max-width:800px) {
+  .walk .walk-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text a {
+  text-decoration: none;
+  color: white;
+}
+.walk .walk-text .btn {
+  font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5E6164;
+  background-color: #22283A;
+  color: #F1F1F1;
+  width: 100%;
+}
+.walk .walk-text .btn:hover {
+  font-size: 1.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5E6164;
+  background-color: #F1F1F1;
+  color: #22283A;
+}
+@media (max-width:800px) {
+  .walk .walk-text .btn:hover {
+    padding: 25px;
+  }
+}
+@media (max-width:800px) {
+  .walk .walk-text .btn {
+    max-width: 100%;
+    padding: 25px;
+  }
+}
+.walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:800px) {
+  .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    max-height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+.walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.main-header span {
+  display: inline-block;
+}
+.main-header span:nth-child(3n+1):hover {
+  font-size: 2rem;
+}
+.main-header span:nth-child(1) {
+  width: 2.66rem;
+}
+.main-header span:nth-child(1):hover {
+  text-align: right;
+}
+.main-header span:nth-child(4) {
+  width: 2.2rem;
+}
+.main-header span:nth-child(4):hover {
+  text-align: center;
+}
+.main-header span:nth-child(7) {
+  width: 2.38rem;
+}
+.main-header span:nth-child(7):hover {
+  text-align: center;
+}
+.main-header span:nth-child(10) {
+  width: 2.4rem;
+}
+.main-header span:nth-child(10):hover {
+  text-align: center;
+}
+.main-header span:nth-child(even):hover {
+  color: red;
+  transition: all 400ms;
+  transform: rotate(-20deg);
+}
+.main-header span:nth-child(odd):hover {
+  color: green;
+  transition: all 400ms;
+  transform: rotate(20deg);
+}

@@ -1,1 +1,33 @@
 // Mixins Here
+
+.anchorStyle(@decoration, @fontcolor) {
+    text-decoration:@decoration;
+    color:@fontcolor;
+}
+
+
+
+.btnStyle(@bgcolor, @fontcolor) {
+    font-size:1.8rem;
+    padding:8px;
+    border-radius:5px;
+    text-align:center;
+    border:1px solid @shuttle-gray;
+    background-color:@bgcolor;
+    color:@fontcolor;
+}
+
+.cReverse(){
+    flex-direction:column-reverse;
+}
+
+.flexCenter() {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btnHoverTransition(@color,@time) {
+    background-color:@color;
+    transition: all @time;
+}
